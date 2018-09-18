@@ -1,0 +1,20 @@
+management:
+  security:
+    enabled: false
+spring:
+  application:
+    name: student
+  cloud:
+    cofig:
+      uri: http://localhost:8888
+  profile:
+    active: development
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
+    
